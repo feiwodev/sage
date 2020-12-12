@@ -1,0 +1,37 @@
+GET http://localhost:5566/v1/user/list
+Accept: application/json
+
+### login user
+POST http://localhost:5566/v1/user/login
+Content-Type: application/json
+
+{
+  "name": "fw",
+  "password": "1234546"
+}
+
+### add user
+POST http://localhost:5566/v1/user
+Content-Type: application/json
+
+{
+  "name": "fw",
+  "password": "1234546",
+  "isUse": true
+}
+
+### update user
+PUT http://localhost:5566/v1/user
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "feiwo2222",
+  "password": "123456",
+  "isUse": true
+}
+
+### delete user
+DELETE http://localhost:5566/v1/user/2
+Content-Type: application/json
+
